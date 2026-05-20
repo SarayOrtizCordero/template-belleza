@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumina Serenity — Centro de Estética y Bienestar de Lujo en Madrid. Rituales exclusivos para el cuerpo y el alma.">
+    <title>Lumina Serenity — Centro de Bienestar de Lujo</title>
+
+    <!-- Fuentes de Diseño — @fontsource via jsDelivr CDN -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.1.0/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.0/index.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- FLOATING ACTION BUTTON — WHATSAPP -->
+    <a href="https://wa.me/34910000000?text=Hola%20Lumina%20Serenity%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20vuestros%20rituales%20de%20bienestar.%20%F0%9F%9F%A2%20Deseo%20reservar%20una%20experiencia%20personalizada." 
+       class="fab-whatsapp" 
+       aria-label="Contactar por WhatsApp" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.732 5.41 2.124 7.738L2.843 22.5l8.368-2.196a9.9 9.9 0 004.736 1.204h.005c5.444 0 9.866-4.422 9.866-9.865 0-2.631-.997-5.107-2.813-6.987-1.816-1.879-4.293-2.913-6.891-2.913"/>
+        </svg>
+    </a>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div class="mobile-overlay" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+        <button class="mobile-overlay-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+        <a href="#tratamientos" aria-label="Ver tratamientos">Tratamientos</a>
+        <a href="#filosofia"    aria-label="Ver filosofía">Filosofía</a>
+        <a href="#galeria"      aria-label="Ver instalaciones">Instalaciones</a>
+        <a href="#reservar"     aria-label="Reservar experiencia">Reservar</a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-logo" aria-label="Lumina Serenity — volver al inicio">Lumina Serenity</a>
+        <ul class="nav-links" role="list">
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#galeria">Instalaciones</a></li>
+            <li><a href="#reservar">Contacto</a></li>
+        </ul>
+        <a href="#reservar" class="nav-reserve">Reservar</a>
+        <button class="nav-burger" id="menuOpen" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Sección principal — Lumina Serenity">
+        <div class="hero-bg" id="heroBg" role="img" aria-label="Ambiente de spa de lujo con iluminación cálida"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Centro de Bienestar de Lujo · Madrid</p>
+            <h1 class="hero-title">Reconecta con<br><em>tu esencia</em></h1>
+            <p class="hero-sub">Un espacio donde el tiempo se detiene y el cuerpo recupera su equilibrio más profundo.</p>
+            <a href="#reservar" class="hero-cta">
+                Reservar Experiencia
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <div class="hero-scroll-line"></div>
+            <span>Explorar</span>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip" role="region" aria-label="Datos del centro">
+        <div class="stats-inner">
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+                <span class="stat-number">28</span>
+                <span class="stat-label">Rituales exclusivos</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfacción de clientes</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Premios de excelencia</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRATAMIENTOS CAROUSEL -->
+    <section class="services section" id="tratamientos" aria-label="Nuestros tratamientos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Nuestros Rituales</span>
+                <h2 class="section-title">Experiencias diseñadas para renovarte</h2>
+                <p class="section-subtitle">Cada tratamiento es un viaje único hacia el equilibrio interior, guiado por especialistas certificados.</p>
+            </div>
+        </div>
+
+        <div class="carousel-wrapper" id="carouselTrack" role="region" aria-label="Carrusel de tratamientos">
+
+            <article class="service-card reveal">
+                <span class="service-card-price" aria-label="Precio desde 85 euros">Desde 85€</span>
+                <div class="service-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" alt="Tratamiento facial de lujo con productos botánicos naturales" class="service-card-img" loading="lazy">
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-cat">Rostro &amp; Piel</p>
+                    <h3 class="service-card-name">Tratamientos Faciales</h3>
+                    <p class="service-card-desc">Rituales personalizados con activos botánicos de alta concentración. Recupera la luminosidad natural de tu piel con protocolos clínicos de última generación.</p>
+                    <a href="#reservar" class="service-card-cta">
+                        Descubrir ritual
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card reveal reveal-d1">
+                <span class="service-card-price" aria-label="Precio desde 110 euros">Desde 110€</span>
+                <div class="service-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80" alt="Masaje holístico con piedras calientes volcánicas" class="service-card-img" loading="lazy">
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-cat">Cuerpo &amp; Alma</p>
+                    <h3 class="service-card-name">Masajes Holísticos</h3>
+                    <p class="service-card-desc">Técnicas ancestrales de todo el mundo en un protocolo exclusivo. Disuelve la tensión acumulada y restaura tu vitalidad desde la profundidad muscular.</p>
+                    <a href="#reservar" class="service-card-cta">
+                        Descubrir ritual
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card reveal reveal-d2">
+                <span class="service-card-price" aria-label="Precio desde 145 euros">Desde 145€</span>
+                <div class="service-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=700&q=80" alt="Circuito de aguas termales con piscina de flotación" class="service-card-img" loading="lazy">
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-cat">Agua &amp; Bienestar</p>
+                    <h3 class="service-card-name">Circuitos de Agua</h3>
+                    <p class="service-card-desc">Una travesía sensorial por nuestra área termal privada: piscina de flotación, gruta de vapor, sauna finlandesa y ducha de experiencias cromáticas.</p>
+                    <a href="#reservar" class="service-card-cta">
+                        Descubrir ritual
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card reveal reveal-d3">
+                <span class="service-card-price" aria-label="Precio desde 95 euros">Desde 95€</span>
+                <div class="service-card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=700&q=80" alt="Aromaterapia con aceites esenciales de grado terapéutico" class="service-card-img" loading="lazy">
+                </div>
+                <div class="service-card-body">
+                    <p class="service-card-cat">Sentidos &amp; Aromas</p>
+                    <h3 class="service-card-name">Aromaterapia Avanzada</h3>
+                    <p class="service-card-desc">Sesiones con aceites esenciales de grado terapéutico. El poder concentrado de la naturaleza para equilibrar el sistema nervioso y elevar tu estado de ánimo.</p>
+                    <a href="#reservar" class="service-card-cta">
+                        Descubrir ritual
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M7 3l4 4-4 4"/></svg>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+        
+        <!-- /carousel-wrapper -->
+        <div class="container" style="padding-top:.5rem;">
+            <div class="carousel-nav" role="group" aria-label="Controles del carrusel">
+                <button class="carousel-btn" id="carouselPrev" aria-label="Tratamiento anterior">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 4l-5 5 5 5"/></svg>
+                </button>
+                <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Indicador de posición del carrusel"></div>
+                <button class="carousel-btn" id="carouselNext" aria-label="Siguiente tratamiento">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 4l5 5-5 5"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="filosofia" aria-label="Filosofía de Lumina Serenity">
+        <div class="philosophy-inner reveal">
+            <div class="philosophy-rule" aria-hidden="true"></div>
+            <h2 class="philosophy-title">El bienestar es un <em>estado de ser</em>,<br>no un destino al que llegar</h2>
+            <p class="philosophy-body">
+                En Lumina Serenity creemos que el verdadero lujo no se mide en objetos, sino en momentos de conexión profunda con uno mismo. Cada visita es diseñada meticulosamente por nuestro equipo de especialistas para devolverte a tu centro, escuchar las señales de tu cuerpo y nutrir tu espíritu con la atención que merece.
+            </p>
+            <p class="philosophy-body">
+                Trabajamos exclusivamente con ingredientes de origen sostenible y formulaciones desarrolladas en colaboración con institutos de dermatología de prestigio internacional. Respetar la naturaleza es también respetarte a ti.
+            </p>
+            <div class="philosophy-values" role="list">
+                <div class="philosophy-value" role="listitem">
+                    <div class="philosophy-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M10 2C6 2 3 5 3 9c0 5 7 9 7 9s7-4 7-9c0-4-3-7-7-7z"/></svg>
+                    </div>
+                    <span class="philosophy-value-label">Bienestar holístico</span>
+                </div>
+                <div class="philosophy-value" role="listitem">
+                    <div class="philosophy-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.25"><circle cx="10" cy="10" r="3"/><path d="M10 1v3M10 16v3M1 10h3M16 10h3M4 4l2 2M12 12l2 2M14 4l-2 2M6 12l-2 2"/></svg>
+                    </div>
+                    <span class="philosophy-value-label">Ingredientes puros</span>
+                </div>
+                <div class="philosophy-value" role="listitem">
+                    <div class="philosophy-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M10 3c3.5 0 6 2.5 6 5.5 0 4-6 9-6 9S4 12.5 4 8.5C4 5.5 6.5 3 10 3z"/><path d="M10 11V7M8 9h4"/></svg>
+                    </div>
+                    <span class="philosophy-value-label">Sostenibilidad</span>
+                </div>
+                <div class="philosophy-value" role="listitem">
+                    <div class="philosophy-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M10 2l2.5 5H18l-4.5 3.5 1.75 5.5L10 13l-5.25 3 1.75-5.5L2 7h5.5z"/></svg>
+                    </div>
+                    <span class="philosophy-value-label">Excelencia clínica</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="galeria" aria-label="Galería de instalaciones">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Nuestro Espacio</span>
+                <h2 class="section-title">Instalaciones diseñadas para la serenidad</h2>
+                <p class="section-subtitle">Más de 1.200 m² concebidos por arquitectos especializados en ambientes de bienestar.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=1000&q=80" alt="Sala principal de tratamientos con iluminación zen y madera natural" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-d1">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Área de relajación con tumbonas y atmósfera serena" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-d2">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Cabina privada de tratamientos faciales con equipamiento de última generación" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=500&q=80" alt="Selección de productos de cosmética natural orgánica" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-d1">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=500&q=80" alt="Zona de hidroterapia y circuito de aguas termales" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-d2">
+                    <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=500&q=80" alt="Rincón de meditación con velas aromáticas y elementos naturales" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" id="testimonios" aria-label="Testimonios de clientes">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Experiencias Reales</span>
+                <h2 class="section-title">Lo que dicen quienes nos visitan</h2>
+            </div>
+            <div class="testimonials-grid">
+
+                <div class="testimonial reveal">
+                    <div class="testimonial-stars" role="img" aria-label="5 estrellas de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <div class="testimonial-mark" aria-hidden="true">"</div>
+                    <p class="testimonial-text">Llegué agotada y salí renacida. El masaje holístico fue una experiencia que jamás olvidaré. El personal cuida cada detalle con una delicadeza que pocas veces he vivido.</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=88&h=88&q=80" alt="Sofía Martínez" class="testimonial-avatar" loading="lazy">
+                        <div>
+                            <p class="testimonial-name">Sofía Martínez</p>
+                            <p class="testimonial-role">Directora Creativa · Madrid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial reveal reveal-d1">
+                    <div class="testimonial-stars" role="img" aria-label="5 estrellas de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <div class="testimonial-mark" aria-hidden="true">"</div>
+                    <p class="testimonial-text">El circuito de aguas es simplemente excepcional. La transición entre temperaturas y el silencio absoluto de las instalaciones crean una experiencia profundamente sanadora.</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=88&h=88&q=80" alt="Carlos Ruiz" class="testimonial-avatar" loading="lazy">
+                        <div>
+                            <p class="testimonial-name">Carlos Ruiz</p>
+                            <p class="testimonial-role">Arquitecto · Barcelona</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial reveal reveal-d2">
+                    <div class="testimonial-stars" role="img" aria-label="5 estrellas de 5">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <div class="testimonial-mark" aria-hidden="true">"</div>
+                    <p class="testimonial-text">Mi facial personalizado transformó mi piel en tan sólo tres sesiones. Lumina Serenity no es un spa, es un santuario. Mi único arrepentimiento es no haberlos encontrado antes.</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=88&h=88&q=80" alt="Elena Vidal" class="testimonial-avatar" loading="lazy">
+                        <div>
+                            <p class="testimonial-name">Elena Vidal</p>
+                            <p class="testimonial-role">Médica Dermatóloga · Sevilla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="section" id="reservar" style="background:var(--cream);" aria-label="Formulario de reserva">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Reserva tu Ritual</span>
+                <h2 class="section-title">Comienza tu viaje hacia el bienestar</h2>
+                <p class="section-subtitle">Completa el formulario y nuestro equipo se pondrá en contacto contigo en menos de 24 horas.</p>
+            </div>
+
+            <div class="booking-card reveal">
+                <form id="bookingForm" novalidate aria-label="Formulario de solicitud de reserva">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fname" class="form-label">Nombre <span aria-hidden="true">*</span></label>
+                            <input type="text" id="fname" name="fname" class="form-input" placeholder="Tu nombre" required autocomplete="given-name" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname" class="form-label">Apellidos <span aria-hidden="true">*</span></label>
+                            <input type="text" id="lname" name="lname" class="form-input" placeholder="Tus apellidos" required autocomplete="family-name" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-grid" style="margin-bottom:1.25rem;">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+34 600 000 000" autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="form-grid" style="margin-bottom:1.25rem;">
+                        <div class="form-group">
+                            <label for="service" class="form-label">Tratamiento <span aria-hidden="true">*</span></label>
+                            <div class="form-select-wrap">
+                                <select id="service" name="service" class="form-select" required aria-required="true">
+                                <option value="" disabled selected>Selecciona un ritual</option>
+                                <option>Tratamientos Faciales</option>
+                                <option>Masajes Holísticos</option>
+                                <option>Circuitos de Agua</option>
+                                <option>Aromaterapia Avanzada</option>
+                                <option>Paquete Pareja</option>
+                                <option>Bono Regalo</option>
+                                </select>
+                                <svg class="form-select-arrow" width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5l4.5 4.5L11 5"/></svg>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="form-label">Fecha preferida</label>
+                            <input type="date" id="date" name="date" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom:1.5rem;">
+                        <label for="message" class="form-label">Notas o necesidades especiales</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Cuéntanos sobre tus objetivos, condiciones de salud relevantes o preferencias especiales..." aria-describedby="msg-hint"></textarea>
+                        <span id="msg-hint" class="form-hint">Esta información nos ayuda a personalizar tu experiencia al máximo.</span>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        Solicitar mi reserva
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                    </button>
+                    <p class="form-note">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="5" width="8" height="6" rx="1"/><path d="M4 5V3.5a2 2 0 0 1 4 0V5"/></svg>
+                        Tus datos están protegidos y nunca serán cedidos a terceros.
+                    </p>
+                </form>
+                <div class="form-success" id="formSuccess" role="alert" aria-live="polite" tabindex="-1">
+                    <div class="success-icon" aria-hidden="true">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 14l5 5L21 8"/></svg>
+                    </div>
+                    <h3 class="success-title">¡Reserva recibida!</h3>
+                    <p class="success-body">Gracias por confiar en Lumina Serenity. Nuestro equipo se pondrá en contacto contigo en las próximas 24 horas para confirmar y personalizar tu experiencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="footer-top">
+            <div>
+                <div class="footer-logo">Lumina Serenity</div>
+                <p class="footer-tagline">Centro de Bienestar y Estética de Lujo en el corazón de Madrid. Donde el tiempo se detiene y el alma respira.</p>
+            </div>
+            <div>
+                <p class="footer-col-h">Tratamientos</p>
+                <ul class="footer-links">
+                    <li><a href="#tratamientos">Tratamientos Faciales</a></li>
+                    <li><a href="#tratamientos">Masajes Holísticos</a></li>
+                    <li><a href="#tratamientos">Circuitos de Agua</a></li>
+                    <li><a href="#tratamientos">Aromaterapia</a></li>
+                    <li><a href="#reservar">Paquetes Pareja</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-h">Centro</p>
+                <ul class="footer-links">
+                    <li><a href="#filosofia">Nuestra Filosofía</a></li>
+                    <li><a href="#galeria">Instalaciones</a></li>
+                    <li><a href="#filosofia">Nuestro Equipo</a></li>
+                    <li><a href="#reservar">Bonos Regalo</a></li>
+                    <li><a href="#filosofia">Blog de Bienestar</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-h">Contacto</p>
+                <ul class="footer-links">
+                    <li><a href="tel:+34910000000">+34 910 000 000</a></li>
+                    <li><a href="mailto:hola@luminaserenity.com">hola@luminaserenity.com</a></li>
+                    <li><a href="#galeria">C/ Serrano 42, Madrid</a></li>
+                </ul>
+                <p style="font-size:.8rem;color:rgba(250,248,242,.38);margin-top:.875rem;line-height:1.7;">
+                Lun–Vie: 9:00 – 21:00<br>Sáb–Dom: 10:00 – 20:00
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2025 Lumina Serenity. Todos los derechos reservados.</p>
+            <nav class="footer-social" aria-label="Redes sociales de Lumina Serenity">
+                <a href="#" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.19-.77 1.28-5.43 1.28-5.43s-.33-.65-.33-1.62c0-1.52.88-2.66 1.97-2.66.93 0 1.38.7 1.38 1.54 0 .94-.6 2.34-.91 3.64-.26 1.09.54 1.97 1.61 1.97 1.93 0 3.42-2.04 3.42-4.97 0-2.6-1.87-4.42-4.54-4.42-3.09 0-4.9 2.32-4.9 4.72 0 .94.36 1.94.81 2.49.07.08.08.16.06.25-.08.34-.27 1.09-.31 1.24-.05.2-.17.24-.38.14-1.4-.65-2.28-2.7-2.28-4.35 0-3.54 2.57-6.79 7.41-6.79 3.89 0 6.91 2.77 6.91 6.47 0 3.86-2.43 6.96-5.81 6.96-1.13 0-2.2-.59-2.57-1.28l-.7 2.6c-.25.97-.93 2.19-1.39 2.93A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
